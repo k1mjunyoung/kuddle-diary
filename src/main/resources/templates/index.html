@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kuddle, 나만의 레트로 일기장</title>
+</head>
+<body>
+    안녕하세요 커들입니다.
+    <a sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
+    <a sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
+    <a th:href="@{/user/signup}">회원가입</a>
+</body>
+</html>
